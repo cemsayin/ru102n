@@ -4,7 +4,9 @@
 var options = new ConfigurationOptions
 {
     // add and update parameters as needed
-    EndPoints = {"localhost:6379"}
+    EndPoints = {"127.0.0.1:6379"},
+    User = "default",
+    Password = "mypassword"
 };
 
 // initalize a multiplexer with ConnectionMultiplexer.Connect()
